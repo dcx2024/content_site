@@ -78,29 +78,7 @@ export default function App() {
             </div>
           </div>
 
-          <div className="lg:col-span-6 relative group">
-            <div className="absolute inset-0 bg-[#4B1FA6]/20 transform translate-x-4 translate-y-4 rounded-sm"></div>
-            <div className="relative aspect-video bg-black rounded-sm overflow-hidden border border-[#F7F5FC]/10 shadow-2xl">
-              <iframe 
-                className="w-full h-full absolute inset-0 z-10"
-                src="https://www.youtube.com/embed/tO01J-M3g0U?rel=0&modestbranding=1" 
-                title="The Sovereign Protocol Showreel" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowFullScreen
-              ></iframe>
-
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/95 via-black/60 to-transparent pointer-events-none z-20">
-                <div className="flex justify-between items-end">
-                  <div>
-                    <h3 className="font-serif font-bold text-xl drop-shadow-md">The Sovereign Protocol</h3>
-                    <p className="text-xs text-[#F7F5FC]/80 mt-1 drop-shadow-md">Directed by King's Concepts</p>
-                  </div>
-                  <div className="flex gap-2">
-                    <span className="text-[10px] uppercase tracking-wider px-2 py-1 bg-black/60 border border-white/20 backdrop-blur-md rounded-sm">8K UHD</span>
-                    <span className="text-[10px] uppercase tracking-wider px-2 py-1 bg-black/60 border border-white/20 backdrop-blur-md rounded-sm text-[#2F6BFF]">60FPS ProRes</span>
-                  </div>
-                </div>
+        
               </div>
             </div>
           </div>
@@ -126,7 +104,7 @@ export default function App() {
                 <div className="relative aspect-video bg-black rounded-sm overflow-hidden mb-4 border border-[#F7F5FC]/10 group-hover:border-[#2F6BFF]/50 transition-colors">
                   <iframe 
                     className="w-full h-full absolute inset-0"
-                    src={`https://www.youtube.com/embed/${vid.youtubeId}?rel=0&modestbranding=1`}
+                    src={`https://www.youtube.com/embed/${vid.youtubeId}?rel=0&modestbranding=1&controls=0`}
                     title={vid.title}
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -217,7 +195,7 @@ export default function App() {
                 title: "ScholarArch Repository",
                 desc: "Academic repository for past exams, lecture notes, and research papers.",
                 stack: ["React", "Tailwind CSS", "Node.js"],
-                img: "Screenshot 2026-10-22 210323.png"
+                img: "Screenshot 2026-10-22 210323.png" //[cite: 1]
               },
               {
                 title: "Kinetix Performance",
