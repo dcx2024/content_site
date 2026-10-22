@@ -179,14 +179,6 @@ export default function App() {
               <Monitor className="w-8 h-8 text-[#2F6BFF]" />
               <h2 className="font-serif text-4xl font-bold">Creative Engineering</h2>
             </div>
-            <div className="flex gap-4 mt-6 md:mt-0">
-              <span className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#F7F5FC]/80 bg-[#150B33] px-3 py-1.5 border border-[#F7F5FC]/10 rounded-sm">
-                <Star className="w-3 h-3 text-[#4B1FA6] fill-current" /> Awwwards SOTD
-              </span>
-              <span className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#F7F5FC]/80 bg-[#150B33] px-3 py-1.5 border border-[#F7F5FC]/10 rounded-sm">
-                <Star className="w-3 h-3 text-[#2F6BFF] fill-current" /> FWA of the Day
-              </span>
-            </div>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
@@ -246,7 +238,7 @@ export default function App() {
               { num: "01", title: "Discovery & Treatment", time: "Weeks 1–2", desc: "Creative direction, visual moodboards, brand sovereignty audit, narrative scriptwriting." },
               { num: "02", title: "Pre-Production", time: "Weeks 2–3", desc: "Talent scouting, location permits, technical camera package & lighting rigging, storyboarding." },
               { num: "03", title: "Production & Capture", time: "3–10 Shoot Days", desc: "Multi-camera cinema shoot, high-speed motion rigs, specialized lighting, DIT color proofing." },
-              { num: "04", title: "Color, Sound & Launch", time: "Weeks 3–4", desc: "Orchestral audio scoring, Hollywood DaVinci grading, interactive platform engineering, 8K delivery." }
+              { num: "04", title: "Color, Sound & Launch", time: "Weeks 3–4", desc: "Audio scoring, DaVinci grading, interactive platform engineering, High Quality delivery." }
             ].map((step, i) => (
               <div key={i} className="relative border-l border-[#2F6BFF]/30 pl-6 pb-8">
                 <div className="absolute top-0 -left-[17px] bg-[#150B33] text-[#2F6BFF] font-serif font-bold text-lg border border-[#2F6BFF]/30 w-8 h-8 flex items-center justify-center rounded-sm">
@@ -298,6 +290,7 @@ export default function App() {
                <div className="space-y-4">
                 <label className="text-xs uppercase tracking-wider text-[#F7F5FC]/60">Estimated Budget</label>
                 <select className="w-full bg-transparent border-b border-[#F7F5FC]/20 py-3 text-[#F7F5FC] focus:outline-none focus:border-[#2F6BFF] transition-colors appearance-none cursor-pointer">
+                  <option className="bg-[#150B33]">$5,000 – $25,000</option>
                   <option className="bg-[#150B33]">$25,000 – $50,000</option>
                   <option className="bg-[#150B33]">$50,000 – $100,000</option>
                   <option className="bg-[#150B33]">$100,000+</option>
