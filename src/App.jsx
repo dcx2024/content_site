@@ -81,10 +81,10 @@ export default function App() {
           <div className="lg:col-span-6 relative group">
             <div className="absolute inset-0 bg-[#4B1FA6]/20 transform translate-x-4 translate-y-4 rounded-sm"></div>
             <div className="relative aspect-video bg-black rounded-sm overflow-hidden border border-[#F7F5FC]/10 shadow-2xl">
-              {/* Replaced placeholder HDR video with client video */}
               <iframe 
-                className="w-full h-full absolute inset-0 z-10"
-                src="https://www.youtube.com/embed/U4ZwqE6ZVG0?rel=0&modestbranding=1&controls=0" 
+                className="absolute left-0 w-full z-10"
+                style={{ top: '-60px', height: 'calc(100% + 120px)' }}
+                src="https://www.youtube.com/embed/U4ZwqE6ZVG0?controls=1&modestbranding=1&rel=0" 
                 title="Master Showreel" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -125,8 +125,9 @@ export default function App() {
               <div key={i} className="group flex flex-col h-full">
                 <div className="relative aspect-video bg-black rounded-sm overflow-hidden mb-4 border border-[#F7F5FC]/10 group-hover:border-[#2F6BFF]/50 transition-colors">
                   <iframe 
-                    className="w-full h-full absolute inset-0"
-                    src={`https://www.youtube.com/embed/${vid.youtubeId}?rel=0&modestbranding=1&controls=0`}
+                    className="absolute left-0 w-full"
+                    style={{ top: '-60px', height: 'calc(100% + 120px)' }}
+                    src={`https://www.youtube.com/embed/${vid.youtubeId}?controls=1&modestbranding=1&rel=0`}
                     title={vid.title}
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
