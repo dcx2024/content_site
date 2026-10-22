@@ -107,7 +107,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* VIDEOGRAPHY - ALL UNIFORM SIZED (ASPECT-VIDEO) */}
+      {/* VIDEOGRAPHY */}
       <section id="videography" className="py-24 px-6 bg-[#0A051A]">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-4 mb-16 border-b border-[#F7F5FC]/10 pb-8">
@@ -123,7 +123,6 @@ export default function App() {
               { title: "Game Day Action", tag: "Social / Shorts", rig: "Vertical Format", youtubeId: "gpdtqS75Ago" }
             ].map((vid, i) => (
               <div key={i} className="group flex flex-col h-full">
-                {/* Changed to uniform aspect-video */}
                 <div className="relative aspect-video bg-black rounded-sm overflow-hidden mb-4 border border-[#F7F5FC]/10 group-hover:border-[#2F6BFF]/50 transition-colors">
                   <iframe 
                     className="w-full h-full absolute inset-0"
@@ -215,10 +214,10 @@ export default function App() {
           <div className="grid lg:grid-cols-2 gap-12">
             {[
               {
-                title: "Hyperion Sound Labs",
-                desc: "3D spatial audio e-commerce experience.",
-                stack: ["Three.js", "WebAudio API", "Shopify Plus"],
-                img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1964&auto=format&fit=crop"
+                title: "ScholarArch Repository",
+                desc: "Academic repository for past exams, lecture notes, and research papers.",
+                stack: ["React", "Tailwind CSS", "Node.js"],
+                img: "Screenshot 2026-10-22 210323.png"
               },
               {
                 title: "Kinetix Performance",
