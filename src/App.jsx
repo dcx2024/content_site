@@ -16,12 +16,13 @@ export default function App() {
       {/* HEADER */}
       <header className="fixed top-0 w-full z-50 bg-[#150B33]/80 backdrop-blur-md border-b border-[#F7F5FC]/10">
         <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-4">
             {/* Logo Mark */}
-            <div className="relative w-8 h-8 flex items-center justify-center">
-              <div className="absolute inset-0 bg-[#4B1FA6] transform rotate-45"></div>
-              <div className="absolute w-2 h-2 bg-[#2F6BFF] -top-1"></div>
-            </div>
+            <img 
+              src="logo.jpg" 
+              alt="King's Concepts Logo" 
+              className="h-10 w-auto object-contain rounded-sm"
+            />
             <div>
               <h1 className="font-serif font-bold text-xl tracking-wider uppercase leading-none">King's</h1>
               <p className="text-[0.65rem] tracking-[0.2em] text-[#F7F5FC]/70 uppercase">Concepts Media</p>
@@ -81,15 +82,17 @@ export default function App() {
           <div className="lg:col-span-6 relative group">
             <div className="absolute inset-0 bg-[#4B1FA6]/20 transform translate-x-4 translate-y-4 rounded-sm"></div>
             <div className="relative aspect-video bg-black rounded-sm overflow-hidden border border-[#F7F5FC]/10 shadow-2xl">
-              <iframe 
-                className="absolute left-0 w-full z-10"
-                style={{ top: '-60px', height: 'calc(100% + 120px)' }}
-                src="https://www.youtube.com/embed/U4ZwqE6ZVG0?controls=1&modestbranding=1&rel=0" 
-                title="Master Showreel" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowFullScreen
-              ></iframe>
+              <div className="relative w-full aspect-video overflow-hidden rounded-xl shadow-lg bg-black">
+                <iframe 
+                  className="absolute left-0 w-full"
+                  style={{ top: '-60px', height: 'calc(100% + 120px)' }}
+                  src="https://www.youtube.com/embed/U4ZwqE6ZVG0?controls=1&modestbranding=1&rel=0" 
+                  title="Master Showreel" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowFullScreen
+                ></iframe>
+              </div>
 
               <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/95 via-black/60 to-transparent pointer-events-none z-20">
                 <div className="flex justify-between items-end">
@@ -124,15 +127,17 @@ export default function App() {
             ].map((vid, i) => (
               <div key={i} className="group flex flex-col h-full">
                 <div className="relative aspect-video bg-black rounded-sm overflow-hidden mb-4 border border-[#F7F5FC]/10 group-hover:border-[#2F6BFF]/50 transition-colors">
-                  <iframe 
-                    className="absolute left-0 w-full"
-                    style={{ top: '-60px', height: 'calc(100% + 120px)' }}
-                    src={`https://www.youtube.com/embed/${vid.youtubeId}?controls=1&modestbranding=1&rel=0`}
-                    title={vid.title}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                  <div className="relative w-full aspect-video overflow-hidden">
+                    <iframe 
+                      className="absolute left-0 w-full"
+                      style={{ top: '-60px', height: 'calc(100% + 120px)' }}
+                      src={`https://www.youtube.com/embed/${vid.youtubeId}?controls=1&modestbranding=1&rel=0`}
+                      title={vid.title}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
                 </div>
                 <div className="flex flex-col flex-grow justify-start mt-2">
                   <p className="text-xs text-[#2F6BFF] font-medium tracking-wider uppercase mb-1">{vid.tag}</p>
@@ -352,11 +357,12 @@ export default function App() {
       <footer className="bg-[#0A051A] pt-20 pb-8 px-6 border-t border-[#F7F5FC]/10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-1">
-             <div className="flex items-center gap-3 mb-6">
-              <div className="relative w-6 h-6 flex items-center justify-center">
-                <div className="absolute inset-0 bg-[#4B1FA6] transform rotate-45"></div>
-                <div className="absolute w-1.5 h-1.5 bg-[#2F6BFF] -top-1"></div>
-              </div>
+             <div className="flex items-center gap-4 mb-6">
+              <img 
+                src="logo.jpg" 
+                alt="King's Concepts Logo" 
+                className="h-8 w-auto object-contain rounded-sm grayscale opacity-70"
+              />
               <h1 className="font-serif font-bold text-lg tracking-wider uppercase">King's</h1>
             </div>
             <p className="text-sm text-[#F7F5FC]/50 mb-6 max-w-xs">
