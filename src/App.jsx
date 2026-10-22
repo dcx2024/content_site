@@ -107,7 +107,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* VIDEOGRAPHY - UPDATED WITH USER LINKS */}
+      {/* VIDEOGRAPHY - ALL UNIFORM SIZED (ASPECT-VIDEO) */}
       <section id="videography" className="py-24 px-6 bg-[#0A051A]">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-4 mb-16 border-b border-[#F7F5FC]/10 pb-8">
@@ -117,13 +117,14 @@ export default function App() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { title: "Court Vision Vol. 1", tag: "Athletic Spot", rig: "Cinema Rig", youtubeId: "U4ZwqE6ZVG0", isShort: false },
-              { title: "Court Vision Vol. 2", tag: "Athletic Spot", rig: "Cinema Rig", youtubeId: "7TWS94yso60", isShort: false },
-              { title: "Hoops Vertical Edit", tag: "Social / Shorts", rig: "Vertical Format", youtubeId: "I3nKEUtmNYw", isShort: true },
-              { title: "Game Day Action", tag: "Social / Shorts", rig: "Vertical Format", youtubeId: "gpdtqS75Ago", isShort: true }
+              { title: "Court Vision Vol. 1", tag: "Athletic Spot", rig: "Cinema Rig", youtubeId: "U4ZwqE6ZVG0" },
+              { title: "Court Vision Vol. 2", tag: "Athletic Spot", rig: "Cinema Rig", youtubeId: "7TWS94yso60" },
+              { title: "Hoops Vertical Edit", tag: "Social / Shorts", rig: "Vertical Format", youtubeId: "I3nKEUtmNYw" },
+              { title: "Game Day Action", tag: "Social / Shorts", rig: "Vertical Format", youtubeId: "gpdtqS75Ago" }
             ].map((vid, i) => (
               <div key={i} className="group flex flex-col h-full">
-                <div className={`relative ${vid.isShort ? 'aspect-[9/16]' : 'aspect-video'} bg-black rounded-sm overflow-hidden mb-4 border border-[#F7F5FC]/10 group-hover:border-[#2F6BFF]/50 transition-colors`}>
+                {/* Changed to uniform aspect-video */}
+                <div className="relative aspect-video bg-black rounded-sm overflow-hidden mb-4 border border-[#F7F5FC]/10 group-hover:border-[#2F6BFF]/50 transition-colors">
                   <iframe 
                     className="w-full h-full absolute inset-0"
                     src={`https://www.youtube.com/embed/${vid.youtubeId}?rel=0&modestbranding=1`}
