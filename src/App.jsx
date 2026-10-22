@@ -79,35 +79,7 @@ export default function App() {
             </div>
           </div>
 
-          <div className="lg:col-span-6 relative group">
-            <div className="absolute inset-0 bg-[#4B1FA6]/20 transform translate-x-4 translate-y-4 rounded-sm"></div>
-            <div className="relative aspect-video bg-black rounded-sm overflow-hidden border border-[#F7F5FC]/10 shadow-2xl">
-              <div className="relative w-full aspect-video overflow-hidden rounded-xl shadow-lg bg-black">
-                <iframe 
-                  className="absolute left-0 w-full"
-                  style={{ top: '-60px', height: 'calc(100% + 120px)' }}
-                  src="https://www.youtube.com/embed/U4ZwqE6ZVG0?controls=1&modestbranding=1&rel=0" 
-                  title="Master Showreel" 
-                  frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowFullScreen
-                ></iframe>
-              </div>
-
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/95 via-black/60 to-transparent pointer-events-none z-20">
-                <div className="flex justify-between items-end">
-                  <div>
-                    <h3 className="font-serif font-bold text-xl drop-shadow-md">King's Concepts</h3>
-                    <p className="text-xs text-[#F7F5FC]/80 mt-1 drop-shadow-md">2025 Showreel</p>
-                  </div>
-                  <div className="flex gap-2">
-                    <span className="text-[10px] uppercase tracking-wider px-2 py-1 bg-black/60 border border-white/20 backdrop-blur-md rounded-sm">4K UHD</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+         
       </section>
 
       {/* VIDEOGRAPHY */}
@@ -383,15 +355,7 @@ export default function App() {
             </ul>
           </div>
 
-          <div>
-            <h4 className="font-semibold mb-6 uppercase tracking-wider text-xs">Studios</h4>
-            <ul className="space-y-3 text-sm text-[#F7F5FC]/60">
-              <li>Los Angeles</li>
-              <li>London</li>
-              <li>Tokyo</li>
-            </ul>
-          </div>
-
+         
           <div>
             <h4 className="font-semibold mb-6 uppercase tracking-wider text-xs">Connect</h4>
             <ul className="space-y-3 text-sm text-[#F7F5FC]/60">
