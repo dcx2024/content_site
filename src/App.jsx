@@ -51,7 +51,6 @@ export default function App() {
 
       {/* HERO SECTION */}
       <section className="relative pt-40 pb-20 px-6 min-h-[90vh] flex flex-col justify-center overflow-hidden">
-        {/* Abstract Background Glow */}
         <div className="absolute top-1/4 -right-1/4 w-[800px] h-[800px] bg-[#4B1FA6]/20 rounded-full blur-[120px] pointer-events-none"></div>
         <div className="absolute bottom-0 -left-1/4 w-[600px] h-[600px] bg-[#2F6BFF]/15 rounded-full blur-[100px] pointer-events-none"></div>
 
@@ -79,11 +78,9 @@ export default function App() {
             </div>
           </div>
 
-          {/* Master Showreel Teaser - YOUTUBE EMBED */}
           <div className="lg:col-span-6 relative group">
             <div className="absolute inset-0 bg-[#4B1FA6]/20 transform translate-x-4 translate-y-4 rounded-sm"></div>
             <div className="relative aspect-video bg-black rounded-sm overflow-hidden border border-[#F7F5FC]/10 shadow-2xl">
-              
               <iframe 
                 className="w-full h-full absolute inset-0 z-10"
                 src="https://www.youtube.com/embed/tO01J-M3g0U?rel=0&modestbranding=1" 
@@ -93,7 +90,6 @@ export default function App() {
                 allowFullScreen
               ></iframe>
 
-              {/* Overlay HUD - pointer-events-none ensures you can still click the YouTube video behind it */}
               <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/95 via-black/60 to-transparent pointer-events-none z-20">
                 <div className="flex justify-between items-end">
                   <div>
@@ -111,23 +107,23 @@ export default function App() {
         </div>
       </section>
 
-      {/* VIDEOGRAPHY */}
+      {/* VIDEOGRAPHY - UPDATED WITH USER LINKS */}
       <section id="videography" className="py-24 px-6 bg-[#0A051A]">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-4 mb-16 border-b border-[#F7F5FC]/10 pb-8">
             <Video className="w-8 h-8 text-[#2F6BFF]" />
-            <h2 className="font-serif text-4xl font-bold">Cinema-Grade Videography</h2>
+            <h2 className="font-serif text-4xl font-bold">Sports & Athletics Videography</h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { title: "Midnight Monolith", tag: "Brand Anthem", rig: "Arri Mini LF + Cooke Anamorphic", youtubeId: "LXb3EKWsInQ" },
-              { title: "Aura Sound", tag: "Docuseries", rig: "RED V-Raptor 8K", youtubeId: "u3yFOh4MmqQ" },
-              { title: "Apex Velocity", tag: "Athletic Spot", rig: "Phantom Flex 4K High-Speed", youtubeId: "YE7VzlLtp-4" }
+              { title: "Court Vision Vol. 1", tag: "Athletic Spot", rig: "Cinema Rig", youtubeId: "U4ZwqE6ZVG0", isShort: false },
+              { title: "Court Vision Vol. 2", tag: "Athletic Spot", rig: "Cinema Rig", youtubeId: "7TWS94yso60", isShort: false },
+              { title: "Hoops Vertical Edit", tag: "Social / Shorts", rig: "Vertical Format", youtubeId: "I3nKEUtmNYw", isShort: true },
+              { title: "Game Day Action", tag: "Social / Shorts", rig: "Vertical Format", youtubeId: "gpdtqS75Ago", isShort: true }
             ].map((vid, i) => (
-              <div key={i} className="group">
-                {/* YOUTUBE EMBEDS FOR GRID */}
-                <div className="relative aspect-video bg-black rounded-sm overflow-hidden mb-4 border border-[#F7F5FC]/10 group-hover:border-[#2F6BFF]/50 transition-colors">
+              <div key={i} className="group flex flex-col h-full">
+                <div className={`relative ${vid.isShort ? 'aspect-[9/16]' : 'aspect-video'} bg-black rounded-sm overflow-hidden mb-4 border border-[#F7F5FC]/10 group-hover:border-[#2F6BFF]/50 transition-colors`}>
                   <iframe 
                     className="w-full h-full absolute inset-0"
                     src={`https://www.youtube.com/embed/${vid.youtubeId}?rel=0&modestbranding=1`}
@@ -137,12 +133,10 @@ export default function App() {
                     allowFullScreen
                   ></iframe>
                 </div>
-                <div className="flex justify-between items-start mt-4">
-                  <div>
-                    <p className="text-xs text-[#2F6BFF] font-medium tracking-wider uppercase mb-1">{vid.tag}</p>
-                    <h4 className="font-serif text-xl font-semibold mb-1">{vid.title}</h4>
-                    <p className="text-[#F7F5FC]/50 text-xs font-mono">{vid.rig}</p>
-                  </div>
+                <div className="flex flex-col flex-grow justify-start mt-2">
+                  <p className="text-xs text-[#2F6BFF] font-medium tracking-wider uppercase mb-1">{vid.tag}</p>
+                  <h4 className="font-serif text-xl font-semibold mb-1">{vid.title}</h4>
+                  <p className="text-[#F7F5FC]/50 text-xs font-mono">{vid.rig}</p>
                 </div>
               </div>
             ))}
@@ -171,7 +165,6 @@ export default function App() {
             </div>
           </div>
 
-          {/* Asymmetric Masonry Grid Simulation */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
             <div className="md:col-span-7 h-[600px] relative group overflow-hidden bg-black rounded-sm">
               <img src="https://images.unsplash.com/photo-1549439602-43ebca2327af?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" alt="Editorial" />
@@ -224,7 +217,7 @@ export default function App() {
                 title: "Hyperion Sound Labs",
                 desc: "3D spatial audio e-commerce experience.",
                 stack: ["Three.js", "WebAudio API", "Shopify Plus"],
-                img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1964&auto=format&fit=crop" // Abstract placeholder
+                img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1964&auto=format&fit=crop"
               },
               {
                 title: "Kinetix Performance",
@@ -235,7 +228,6 @@ export default function App() {
             ].map((project, i) => (
               <div key={i} className="group flex flex-col gap-6">
                 <div className="relative aspect-[4/3] bg-[#150B33] rounded-sm overflow-hidden border border-[#F7F5FC]/10 group-hover:border-[#4B1FA6]/50 transition-colors">
-                  {/* Faux Browser Chrome */}
                   <div className="absolute top-0 w-full h-8 bg-black/40 border-b border-white/5 flex items-center px-4 gap-2 z-10">
                     <div className="w-2 h-2 rounded-full bg-white/20"></div>
                     <div className="w-2 h-2 rounded-full bg-white/20"></div>
