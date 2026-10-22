@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Play, Camera, Monitor, ArrowRight, Video, ChevronRight, Search, Menu, X, Star } from 'lucide-react';
+import { Camera, Monitor, ArrowRight, Video, ChevronRight, Search, Menu, X, Star } from 'lucide-react';
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,10 +30,8 @@ export default function App() {
           </div>
 
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
-            <a href="#videography" className="hover:text-[#2F6BFF] transition-colors">Showreel</a>
             <a href="#photography" className="hover:text-[#2F6BFF] transition-colors">Photography</a>
             <a href="#web" className="hover:text-[#2F6BFF] transition-colors">Web Design</a>
-            <a href="#workflow" className="hover:text-[#2F6BFF] transition-colors">Process</a>
             <a href="#contact" className="hover:text-[#2F6BFF] transition-colors">About</a>
           </nav>
 
@@ -51,35 +49,32 @@ export default function App() {
       </header>
 
       {/* HERO SECTION */}
-      <section className="relative pt-40 pb-20 px-6 min-h-[90vh] flex flex-col justify-center overflow-hidden">
+      <section className="relative pt-40 pb-20 px-6 min-h-[70vh] flex flex-col justify-center overflow-hidden">
         <div className="absolute top-1/4 -right-1/4 w-[800px] h-[800px] bg-[#4B1FA6]/20 rounded-full blur-[120px] pointer-events-none"></div>
         <div className="absolute bottom-0 -left-1/4 w-[600px] h-[600px] bg-[#2F6BFF]/15 rounded-full blur-[100px] pointer-events-none"></div>
 
-        <div className="max-w-7xl mx-auto w-full relative z-10 grid lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#F7F5FC]/20 text-xs font-medium mb-6 uppercase tracking-widest text-[#2F6BFF]">
-              <span className="w-2 h-2 rounded-full bg-[#2F6BFF] animate-pulse"></span>
-              Open for Global Commissions Q3/Q4
-            </div>
-            <h2 className="font-serif text-5xl md:text-7xl font-bold leading-[1.1] mb-6">
-              Crafting concepts that <span className="italic text-[#4B1FA6]">command</span> attention.
-            </h2>
-            <p className="text-[#F7F5FC]/70 text-lg md:text-xl mb-10 max-w-xl leading-relaxed">
-              Bridging the gap between Hollywood-tier cinematography, high-fashion editorial imagery, and award-winning spatial web engineering.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="flex items-center justify-center gap-2 bg-[#F7F5FC] text-[#150B33] px-8 py-4 rounded-sm text-sm font-semibold hover:bg-white transition-all">
-                <Play className="w-4 h-4 fill-current" />
-                Watch 2025 Showreel
-              </button>
-              <button className="flex items-center justify-center gap-2 border border-[#F7F5FC]/20 hover:border-[#2F6BFF] hover:text-[#2F6BFF] bg-transparent px-8 py-4 rounded-sm text-sm font-semibold transition-all">
-                Explore Services
-              </button>
-            </div>
+        <div className="max-w-4xl mx-auto w-full relative z-10 flex flex-col items-center text-center">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#F7F5FC]/20 text-xs font-medium mb-6 uppercase tracking-widest text-[#2F6BFF]">
+            <span className="w-2 h-2 rounded-full bg-[#2F6BFF] animate-pulse"></span>
+            Open for Global Commissions Q3/Q4
           </div>
-
-         
+          <h2 className="font-serif text-5xl md:text-7xl font-bold leading-[1.1] mb-6">
+            Crafting concepts that <span className="italic text-[#4B1FA6]">command</span> attention.
+          </h2>
+          <p className="text-[#F7F5FC]/70 text-lg md:text-xl mb-10 max-w-2xl leading-relaxed">
+            Bridging the gap between Hollywood-tier cinematography, high-fashion editorial imagery, and award-winning spatial web engineering.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4">
+            <button className="flex items-center justify-center gap-2 bg-[#F7F5FC] text-[#150B33] px-8 py-4 rounded-sm text-sm font-semibold hover:bg-white transition-all">
+              <Camera className="w-4 h-4 fill-current" />
+              View Photography
+            </button>
+            <button className="flex items-center justify-center gap-2 border border-[#F7F5FC]/20 hover:border-[#2F6BFF] hover:text-[#2F6BFF] bg-transparent px-8 py-4 rounded-sm text-sm font-semibold transition-all">
+              Explore Services
+            </button>
+          </div>
+        </div>
       </section>
 
       {/* VIDEOGRAPHY */}
@@ -143,28 +138,33 @@ export default function App() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
-            <div className="md:col-span-7 h-[600px] relative group overflow-hidden bg-black rounded-sm">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="h-[400px] md:h-[500px] relative group overflow-hidden bg-black rounded-sm">
               <img src="im3.webp" className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 object-top" alt="Editorial Portrait" />
               <div className="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-[#150B33] to-transparent w-full opacity-0 group-hover:opacity-100 transition-opacity">
                 <span className="text-[#2F6BFF] text-xs font-mono mb-2 block">Studio Portraiture</span>
                 <h4 className="font-serif text-2xl">Editorial Headshot</h4>
               </div>
             </div>
-            <div className="md:col-span-5 grid grid-rows-2 gap-4">
-              <div className="h-[292px] relative group overflow-hidden bg-black rounded-sm">
-                <img src="img2.webp" className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 object-center" alt="Event Photography" />
-                 <div className="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-[#150B33] to-transparent w-full opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span className="text-[#2F6BFF] text-[10px] font-mono mb-1 block">Event Capture</span>
-                  <h4 className="font-serif text-lg">Candid & Nightlife</h4>
-                </div>
+            <div className="h-[400px] md:h-[500px] relative group overflow-hidden bg-black rounded-sm">
+              <img src="img2.webp" className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 object-center" alt="Event Photography" />
+               <div className="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-[#150B33] to-transparent w-full opacity-0 group-hover:opacity-100 transition-opacity">
+                <span className="text-[#2F6BFF] text-xs font-mono mb-2 block">Event Capture</span>
+                <h4 className="font-serif text-2xl">Candid & Nightlife</h4>
               </div>
-              <div className="h-[292px] relative group overflow-hidden bg-black rounded-sm">
-                <img src="img1.webp" className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 object-top" alt="Creative Portrait" />
-                 <div className="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-[#150B33] to-transparent w-full opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span className="text-[#2F6BFF] text-[10px] font-mono mb-1 block">Stylized Capture</span>
-                  <h4 className="font-serif text-lg">Creative Portraiture</h4>
-                </div>
+            </div>
+            <div className="h-[400px] md:h-[500px] relative group overflow-hidden bg-black rounded-sm">
+              <img src="img1.webp" className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 object-top" alt="Creative Portrait" />
+               <div className="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-[#150B33] to-transparent w-full opacity-0 group-hover:opacity-100 transition-opacity">
+                <span className="text-[#2F6BFF] text-xs font-mono mb-2 block">Stylized Capture</span>
+                <h4 className="font-serif text-2xl">Creative Portraiture</h4>
+              </div>
+            </div>
+            <div className="h-[400px] md:h-[500px] relative group overflow-hidden bg-black rounded-sm">
+              <img src="img3.webp" className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 object-center" alt="The Black Table Set" /> {/*[cite: 7] */}
+               <div className="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-[#150B33] to-transparent w-full opacity-0 group-hover:opacity-100 transition-opacity">
+                <span className="text-[#2F6BFF] text-xs font-mono mb-2 block">Set & Production</span>
+                <h4 className="font-serif text-2xl">The Black Table</h4>
               </div>
             </div>
           </div>
@@ -327,7 +327,7 @@ export default function App() {
 
       {/* FOOTER */}
       <footer className="bg-[#0A051A] pt-20 pb-8 px-6 border-t border-[#F7F5FC]/10">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           <div className="md:col-span-1">
              <div className="flex items-center gap-4 mb-6">
               <img 
@@ -355,7 +355,6 @@ export default function App() {
             </ul>
           </div>
 
-         
           <div>
             <h4 className="font-semibold mb-6 uppercase tracking-wider text-xs">Connect</h4>
             <ul className="space-y-3 text-sm text-[#F7F5FC]/60">
