@@ -290,6 +290,7 @@ export default function App() {
                <div className="space-y-4">
                 <label className="text-xs uppercase tracking-wider text-[#F7F5FC]/60">Estimated Budget</label>
                 <select className="w-full bg-transparent border-b border-[#F7F5FC]/20 py-3 text-[#F7F5FC] focus:outline-none focus:border-[#2F6BFF] transition-colors appearance-none cursor-pointer">
+                  <option className="bg-[#150B33]">$1,000 – $5,000</option>
                   <option className="bg-[#150B33]">$5,000 – $25,000</option>
                   <option className="bg-[#150B33]">$25,000 – $50,000</option>
                   <option className="bg-[#150B33]">$50,000 – $100,000</option>
@@ -336,8 +337,8 @@ export default function App() {
             <p className="text-sm text-[#F7F5FC]/50 mb-6 max-w-xs">
               Crafting concepts that command attention. Bridging high-fashion, cinema, and spatial web.
             </p>
-            <a href="mailto:KING'Sconceptsmedia@gmail.com" className="text-[#2F6BFF] font-medium text-sm hover:underline">
-              KING'Sconceptsmedia@gmail.com
+            <a href="mailto:kingsconceptsmedia@gmail.com" className="text-[#2F6BFF] font-medium text-sm hover:underline">
+              kingsconceptsmedia@gmail.com
             </a>
           </div>
 
