@@ -329,6 +329,7 @@ export default function App() {
                 className="h-8 w-auto object-contain rounded-sm grayscale opacity-70"
               />
               <h1 className="font-serif font-bold text-lg tracking-wider uppercase">KING'S</h1>
+                <p className="text-[0.65rem] tracking-[0.2em] text-[#F7F5FC]/70 uppercase">Concepts Media</p>
             </div>
             <p className="text-sm text-[#F7F5FC]/50 mb-6 max-w-xs">
               Crafting concepts that command attention. Bridging high-fashion, cinema, and spatial web.
