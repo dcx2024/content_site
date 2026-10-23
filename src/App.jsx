@@ -20,11 +20,11 @@ export default function App() {
             {/* Logo Mark */}
             <img 
               src="logo.jpg" 
-              alt="King's Concepts Logo" 
+              alt="KING'S Concepts Logo" 
               className="h-10 w-auto object-contain rounded-sm"
             />
             <div>
-              <h1 className="font-serif font-bold text-xl tracking-wider uppercase leading-none">King's</h1>
+              <h1 className="font-serif font-bold text-xl tracking-wider uppercase leading-none">KING'S</h1>
               <p className="text-[0.65rem] tracking-[0.2em] text-[#F7F5FC]/70 uppercase">Concepts Media</p>
             </div>
           </div>
@@ -138,30 +138,30 @@ export default function App() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="h-[400px] md:h-[500px] relative group overflow-hidden bg-black rounded-sm flex items-center justify-center">
-              <img src="im3.webp" className="w-full h-full object-contain opacity-80 group-hover:scale-105 transition-transform duration-700" alt="Editorial Portrait" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
+            <div className="relative group overflow-hidden rounded-sm">
+              <img src="im3.webp" className="w-full h-auto opacity-80 group-hover:scale-105 transition-transform duration-700" alt="Editorial Portrait" />
               <div className="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-[#150B33] to-transparent w-full opacity-0 group-hover:opacity-100 transition-opacity">
                 <span className="text-[#2F6BFF] text-xs font-mono mb-2 block">Studio Portraiture</span>
                 <h4 className="font-serif text-2xl">Editorial Headshot</h4>
               </div>
             </div>
-            <div className="h-[400px] md:h-[500px] relative group overflow-hidden bg-black rounded-sm flex items-center justify-center">
-              <img src="img2.webp" className="w-full h-full object-contain opacity-80 group-hover:scale-105 transition-transform duration-700" alt="Event Photography" />
+            <div className="relative group overflow-hidden rounded-sm">
+              <img src="img2.webp" className="w-full h-auto opacity-80 group-hover:scale-105 transition-transform duration-700" alt="Event Photography" />
                <div className="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-[#150B33] to-transparent w-full opacity-0 group-hover:opacity-100 transition-opacity">
                 <span className="text-[#2F6BFF] text-xs font-mono mb-2 block">Event Capture</span>
                 <h4 className="font-serif text-2xl">Candid & Nightlife</h4>
               </div>
             </div>
-            <div className="h-[400px] md:h-[500px] relative group overflow-hidden bg-black rounded-sm flex items-center justify-center">
-              <img src="img1.webp" className="w-full h-full object-contain opacity-80 group-hover:scale-105 transition-transform duration-700" alt="Creative Portrait" />
+            <div className="relative group overflow-hidden rounded-sm">
+              <img src="img1.webp" className="w-full h-auto opacity-80 group-hover:scale-105 transition-transform duration-700" alt="Creative Portrait" />
                <div className="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-[#150B33] to-transparent w-full opacity-0 group-hover:opacity-100 transition-opacity">
                 <span className="text-[#2F6BFF] text-xs font-mono mb-2 block">Stylized Capture</span>
                 <h4 className="font-serif text-2xl">Creative Portraiture</h4>
               </div>
             </div>
-            <div className="h-[400px] md:h-[500px] relative group overflow-hidden bg-black rounded-sm flex items-center justify-center">
-              <img src="img3.webp" className="w-full h-full object-contain opacity-80 group-hover:scale-105 transition-transform duration-700" alt="The Black Table Set" />
+            <div className="relative group overflow-hidden rounded-sm">
+              <img src="img3.webp" className="w-full h-auto opacity-80 group-hover:scale-105 transition-transform duration-700" alt="The Black Table Set" />
                <div className="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-[#150B33] to-transparent w-full opacity-0 group-hover:opacity-100 transition-opacity">
                 <span className="text-[#2F6BFF] text-xs font-mono mb-2 block">Set & Production</span>
                 <h4 className="font-serif text-2xl">The Black Table</h4>
@@ -325,10 +325,10 @@ export default function App() {
              <div className="flex items-center gap-4 mb-6">
               <img 
                 src="logo.jpg" 
-                alt="King's Concepts Logo" 
+                alt="KING'S Concepts Logo" 
                 className="h-8 w-auto object-contain rounded-sm grayscale opacity-70"
               />
-              <h1 className="font-serif font-bold text-lg tracking-wider uppercase">King's</h1>
+              <h1 className="font-serif font-bold text-lg tracking-wider uppercase">KING'S</h1>
             </div>
             <p className="text-sm text-[#F7F5FC]/50 mb-6 max-w-xs">
               Crafting concepts that command attention. Bridging high-fashion, cinema, and spatial web.
@@ -360,7 +360,7 @@ export default function App() {
         </div>
 
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center pt-8 border-t border-[#F7F5FC]/5 text-xs text-[#F7F5FC]/40">
-          <p>© {new Date().getFullYear()} King's Concepts Media. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} KING'S Concepts Media. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-[#F7F5FC]">Privacy Policy</a>
             <a href="#" className="hover:text-[#F7F5FC]">Terms of Service</a>
