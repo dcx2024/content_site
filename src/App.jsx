@@ -139,29 +139,29 @@ export default function App() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="h-[400px] md:h-[500px] relative group overflow-hidden bg-black rounded-sm">
-              <img src="im3.webp" className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 object-top" alt="Editorial Portrait" />
+            <div className="h-[400px] md:h-[500px] relative group overflow-hidden bg-black rounded-sm flex items-center justify-center">
+              <img src="im3.webp" className="w-full h-full object-contain opacity-80 group-hover:scale-105 transition-transform duration-700" alt="Editorial Portrait" />
               <div className="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-[#150B33] to-transparent w-full opacity-0 group-hover:opacity-100 transition-opacity">
                 <span className="text-[#2F6BFF] text-xs font-mono mb-2 block">Studio Portraiture</span>
                 <h4 className="font-serif text-2xl">Editorial Headshot</h4>
               </div>
             </div>
-            <div className="h-[400px] md:h-[500px] relative group overflow-hidden bg-black rounded-sm">
-              <img src="img2.webp" className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 object-center" alt="Event Photography" />
+            <div className="h-[400px] md:h-[500px] relative group overflow-hidden bg-black rounded-sm flex items-center justify-center">
+              <img src="img2.webp" className="w-full h-full object-contain opacity-80 group-hover:scale-105 transition-transform duration-700" alt="Event Photography" />
                <div className="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-[#150B33] to-transparent w-full opacity-0 group-hover:opacity-100 transition-opacity">
                 <span className="text-[#2F6BFF] text-xs font-mono mb-2 block">Event Capture</span>
                 <h4 className="font-serif text-2xl">Candid & Nightlife</h4>
               </div>
             </div>
-            <div className="h-[400px] md:h-[500px] relative group overflow-hidden bg-black rounded-sm">
-              <img src="img1.webp" className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 object-top" alt="Creative Portrait" />
+            <div className="h-[400px] md:h-[500px] relative group overflow-hidden bg-black rounded-sm flex items-center justify-center">
+              <img src="img1.webp" className="w-full h-full object-contain opacity-80 group-hover:scale-105 transition-transform duration-700" alt="Creative Portrait" />
                <div className="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-[#150B33] to-transparent w-full opacity-0 group-hover:opacity-100 transition-opacity">
                 <span className="text-[#2F6BFF] text-xs font-mono mb-2 block">Stylized Capture</span>
                 <h4 className="font-serif text-2xl">Creative Portraiture</h4>
               </div>
             </div>
-            <div className="h-[400px] md:h-[500px] relative group overflow-hidden bg-black rounded-sm">
-              <img src="img3.webp" className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 object-center" alt="The Black Table Set" /> {/*[cite: 7] */}
+            <div className="h-[400px] md:h-[500px] relative group overflow-hidden bg-black rounded-sm flex items-center justify-center">
+              <img src="img3.webp" className="w-full h-full object-contain opacity-80 group-hover:scale-105 transition-transform duration-700" alt="The Black Table Set" />
                <div className="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-[#150B33] to-transparent w-full opacity-0 group-hover:opacity-100 transition-opacity">
                 <span className="text-[#2F6BFF] text-xs font-mono mb-2 block">Set & Production</span>
                 <h4 className="font-serif text-2xl">The Black Table</h4>
@@ -333,8 +333,8 @@ export default function App() {
             <p className="text-sm text-[#F7F5FC]/50 mb-6 max-w-xs">
               Crafting concepts that command attention. Bridging high-fashion, cinema, and spatial web.
             </p>
-            <a href="mailto:commissions@kingsconcepts.com" className="text-[#2F6BFF] font-medium text-sm hover:underline">
-              commissions@kingsconcepts.com
+            <a href="mailto:KING'Sconceptsmedia@gmail.com" className="text-[#2F6BFF] font-medium text-sm hover:underline">
+              KING'Sconceptsmedia@gmail.com
             </a>
           </div>
 
